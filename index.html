@@ -116,42 +116,6 @@
     .nav-overlay .nav-items .nav-item p a { display: block; padding: 0.5em 1em 0.3em; transition: letter-spacing 0.2s ease; }
     .nav-overlay .nav-items .nav-item:not(.active):hover p a { letter-spacing: 0.02em; }
 
-    /* ── GALLERY ─────────────────────────────── */
-    .gallery-section {
-      position: relative; width: 100vw;
-      padding: 6em 2em; background-color: var(--bg);
-    }
-    .gallery-header { margin-bottom: 2.5em; }
-    .gallery-header h2 { font-size: 3.5rem; }
-    .gallery-header p.mn { margin-top: 0.5em; color: var(--accent1); letter-spacing: 0.1em; }
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1em;
-    }
-    .gallery-item {
-      position: relative; aspect-ratio: 4/3;
-      border-radius: 1em; overflow: hidden;
-      border: 0.2em solid var(--fg);
-      background: var(--bg2);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-    }
-    .gallery-item:first-child { grid-column: span 2; aspect-ratio: 16/9; }
-    .gallery-item:hover { transform: scale(1.02); box-shadow: 0 12px 40px rgba(0,0,0,0.18); }
-    .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .gallery-item .gallery-ph {
-      width: 100%; height: 100%;
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
-      background: var(--bg2); gap: 0.5em;
-    }
-    .gallery-item .gallery-ph span { font-family: 'Space Mono', monospace; font-size: 0.65rem; color: var(--accent4); text-align: center; }
-    .gallery-item .gallery-ph .ph-icon { font-size: 2rem; opacity: 0.3; }
-    @media (max-width: 768px) {
-      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-      .gallery-item:first-child { grid-column: span 2; }
-    }
     .nav-overlay .nav-footer {
       position: absolute; left: 0; bottom: 0; width: 100%;
       padding: 2em; display: flex; justify-content: space-between;
@@ -523,7 +487,7 @@
         <div class="nav-item active"><p><a href="/">Home</a></p></div>
         <div class="nav-item"><p><a href="#about">About</a></p></div>
         <div class="nav-item"><p><a href="#work">Work</a></p></div>
-        <div class="nav-item"><p><a href="#gallery">Gallery</a></p></div>
+        <div class="nav-item"><p><a href="https://paunryto-ui.github.io/galery-Portofolio/">Gallery</a></p></div>
         <div class="nav-item"><p><a href="https://github.com/paunryto-ui" target="_blank">Contact</a></p></div>
       </div>
       <div class="nav-footer">
@@ -783,82 +747,6 @@
       </div>
     </section>
 
-    <!-- ── GALLERY ───────────────────────────── -->
-    <section class="gallery-section" id="gallery">
-      <div class="gallery-header">
-        <h2>Masa-Masa Perjuangan</h2>
-        <p class="mn">// memories from the grind ✦</p>
-      </div>
-      <div class="gallery-grid">
-
-        <!-- Foto 1 – GANTI: images/galeri/galeri-1.jpg -->
-        <div class="gallery-item">
-          <div class="gallery-ph">
-            <span class="ph-icon">📁</span>
-            <span>images/galeri/<br>galeri-1.jpg</span>
-          </div>
-        </div>
-
-        <!-- Foto 2 – GANTI: images/galeri/galeri-2.jpg -->
-        <div class="gallery-item">
-          <div class="gallery-ph">
-            <span class="ph-icon">📁</span>
-            <span>images/galeri/<br>galeri-2.jpg</span>
-          </div>
-        </div>
-
-        <!-- Foto 3 – GANTI: images/galeri/galeri-3.jpg -->
-        <div class="gallery-item">
-          <div class="gallery-ph">
-            <span class="ph-icon">📁</span>
-            <span>images/galeri/<br>galeri-3.jpg</span>
-          </div>
-        </div>
-
-        <!-- Foto 4 – GANTI: images/galeri/galeri-4.jpg -->
-        <div class="gallery-item">
-          <div class="gallery-ph">
-            <span class="ph-icon">📁</span>
-            <span>images/galeri/<br>galeri-4.jpg</span>
-          </div>
-        </div>
-
-        <!-- Foto 5 – GANTI: images/galeri/galeri-5.jpg -->
-        <div class="gallery-item">
-          <div class="gallery-ph">
-            <span class="ph-icon">📁</span>
-            <span>images/galeri/<br>galeri-5.jpg</span>
-          </div>
-        </div>
-
-        <!-- Foto 6 – GANTI: images/galeri/galeri-6.jpg -->
-        <div class="gallery-item">
-          <div class="gallery-ph">
-            <span class="ph-icon">📁</span>
-            <span>images/galeri/<br>galeri-6.jpg</span>
-          </div>
-        </div>
-
-        <!-- Foto 7 – GANTI: images/galeri/galeri-7.jpg -->
-        <div class="gallery-item">
-          <div class="gallery-ph">
-            <span class="ph-icon">📁</span>
-            <span>images/galeri/<br>galeri-7.jpg</span>
-          </div>
-        </div>
-
-        <!-- Foto 8 – GANTI: images/galeri/galeri-8.jpg -->
-        <div class="gallery-item">
-          <div class="gallery-ph">
-            <span class="ph-icon">📁</span>
-            <span>images/galeri/<br>galeri-8.jpg</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ── CONTACT CTA ────────────────────────── -->
     <section class="contact-cta">
       <div class="contact-button">
         <a href="https://github.com/paunryto-ui" target="_blank"></a>
@@ -1024,15 +912,6 @@
     }
   });
 
-  // ── GALLERY ────────────────────────────────────────────────
-  gsap.from('.gallery-header', {
-    y: 50, opacity: 0, duration: 0.9, ease: 'power3.out',
-    scrollTrigger: { trigger: '.gallery-section', start: 'top 75%' }
-  });
-  gsap.from('.gallery-item', {
-    y: 60, opacity: 0, stagger: 0.08, duration: 0.7, ease: 'power3.out',
-    scrollTrigger: { trigger: '.gallery-grid', start: 'top 80%' }
-  });
 
   // ── CONTACT CTA ────────────────────────────────────────────────
   gsap.from('.contact-button', {
